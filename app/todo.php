@@ -10,6 +10,9 @@ class todo extends Model
         
     //     return ucfirst($value);  //accessor
     //}
+     public function setTitleAttribute($value){
+         return $this->attributes['title'] = ucfirst($value); //mutators
+    }
     public function setBodyAttribute($value){
          return $this->attributes['body'] = ucfirst($value); //mutators
     }

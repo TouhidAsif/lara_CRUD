@@ -13,8 +13,8 @@
    
    <li class="list-group-item">
        
-       {{ucfirst($todo->title)}}
-       {{ucfirst($todo->body)}}
+       <a href="{{'/todo/'.$todo->id}}">{{($todo->title)}}</a>
+       
        <span class="pull-right">{{$todo->created_at->diffForHumans()}}</span>
         </li>
    @endforeach
